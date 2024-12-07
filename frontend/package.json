@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch",
+    "postinstall": "chmod +x node_modules/.bin/webpack",
     "build": "webpack --mode production"
   },
   "keywords": [],
