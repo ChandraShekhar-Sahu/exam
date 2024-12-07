@@ -1,0 +1,25 @@
+.scroll-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.scroll-content {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 20s linear infinite;
+    animation-play-state: running; /* Set the animation to run by default */
+}
+
+.scroll-content:hover {
+    animation-play-state: paused; /* Pause the animation on hover */
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
